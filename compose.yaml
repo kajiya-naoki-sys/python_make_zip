@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  python:
+    image: python:3.9
+    tty: true
+    container_name: python_zip
+    volumes:
+      - ./src:/usr/src
+    working_dir: /usr/src
